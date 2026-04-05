@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About – Abspark Digitals</title>
+<link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <style>
+    .story-card {
+      background: var(--card-bg);
+      border: 1px solid var(--card-border);
+      border-radius: var(--radius-lg);
+      padding: 40px;
+      max-width: 720px;
+      margin: 0 auto;
+    }
+    .story-card h2 {
+      font-size: 1.6rem;
+      font-weight: 800;
+      margin-bottom: 20px;
+      letter-spacing: -0.5px;
+    }
+    .story-card h2 span {
+      display: inline-block;
+      border-bottom: 3px solid var(--color-hot-pink);
+      padding-bottom: 2px;
+    }
+    .story-card p {
+      font-size: 0.9rem;
+      color: var(--color-white-70);
+      line-height: 1.75;
+      margin-bottom: 14px;
+    }
+    .story-card p:last-child { margin-bottom: 0; }
+
+    .pillars-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 22px;
+      margin-top: 44px;
+    }
+
+    .team-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 22px;
+      margin-top: 44px;
+    }
+    .team-card {
+      background: var(--card-bg);
+      border: 1px solid var(--card-border);
+      border-radius: var(--radius-lg);
+      padding: 28px 20px;
+      text-align: center;
+    }
+    .team-avatar {
+      width: 68px; height: 68px;
+      border-radius: 50%;
+      background: rgba(233,30,140,0.15);
+      border: 2px solid rgba(233,30,140,0.30);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1rem;
+      font-weight: 800;
+      color: var(--color-hot-pink);
+      margin: 0 auto 16px;
+    }
+    .team-card h3 { font-size: 0.95rem; font-weight: 700; }
+    .team-card span { font-size: 0.78rem; color: var(--color-white-45); display: block; margin-top: 4px; }
+
+    @media (max-width: 860px) {
+      .pillars-grid { grid-template-columns: 1fr; }
+      .team-grid { grid-template-columns: repeat(2, 1fr); }
+    }
+    @media (max-width: 500px) {
+      .team-grid { grid-template-columns: repeat(2, 1fr); }
+    }
+  </style>
+</head>
+<body>
+
+<nav>
+  <div class="nav-inner">
+    <a href="index.html" class="logo">Abs<span>park</span></a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html" class="active">About</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="portfolio.html">Portfolio</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="contact.html" class="btn-nav">Get a Free Quote</a></li>
+    </ul>
+    <button class="hamburger" onclick="toggleMenu()" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="page-hero">
+  <h1>About <span>Abspark</span></h1>
+  <p>We're a team of strategists, creatives, and data nerds obsessed with helping brands win in the digital space.</p>
+</section>
+
+<!-- OUR STORY -->
+<section class="section section-mid">
+  <div class="container">
+    <div class="story-card">
+      <h2><span>Our Story</span></h2>
+      <p>Founded in 2019, Abspark Digitals started with a simple belief: every brand deserves access to world-class digital marketing — regardless of size or budget.</p>
+      <p>What began as a two-person operation has grown into a full-service agency serving over 250 clients across industries. From startups to established enterprises, we've helped businesses across e-commerce, SaaS, healthcare, and more.</p>
+      <p>Our approach is simple — listen first, strategize second, execute relentlessly. We don't believe in cookie-cutter solutions. Every client gets a custom roadmap built around their unique goals.</p>
+    </div>
+  </div>
+</section>
+
+<!-- PILLARS -->
+<section class="section section-dark">
+  <div class="container">
+    <div class="pillars-grid">
+      <div class="card">
+        <div class="icon-box"><i class="fas fa-bullseye"></i></div>
+        <h3>Our Mission</h3>
+        <p>To empower brands with innovative digital strategies that deliver measurable growth and lasting impact.</p>
+      </div>
+      <div class="card">
+        <div class="icon-box"><i class="fas fa-telescope"></i></div>
+        <h3>Our Vision</h3>
+        <p>To be the most trusted digital marketing partner for ambitious brands worldwide.</p>
+      </div>
+      <div class="card">
+        <div class="icon-box"><i class="fas fa-bolt"></i></div>
+        <h3>What Makes Us Different</h3>
+        <p>We combine creativity with analytics. Every campaign is backed by data, driven by insight, and designed to convert.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TEAM -->
+<section class="section section-mid">
+  <div class="container">
+    <div style="text-align:center;">
+      <h2 class="section-title">Meet the Team</h2>
+      <p class="section-sub">The people behind the spark.</p>
+    </div>
+    <div class="team-grid">
+      <div class="team-card">
+        <div class="team-avatar">AR</div>
+        <h3>Alex Rivera</h3>
+        <span>Founder &amp; CEO</span>
+      </div>
+      <div class="team-card">
+        <div class="team-avatar">PS</div>
+        <h3>Priya Sharma</h3>
+        <span>Head of Strategy</span>
+      </div>
+      <div class="team-card">
+        <div class="team-avatar">DK</div>
+        <h3>David Kim</h3>
+        <span>Creative Director</span>
+      </div>
+      <div class="team-card">
+        <div class="team-avatar">LT</div>
+        <h3>Lisa Thompson</h3>
+        <span>PPC Lead</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta-band">
+  <div class="cta-box">
+    <h2>Ready to Work Together?</h2>
+    <p>Let's build something great for your brand.</p>
+    <a href="contact.html" class="btn btn-primary">Get in Touch →</a>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-grid">
+    <div class="footer-brand">
+      <a href="index.html" class="logo">Abs<span>park</span> Digitals</a>
+      <p>Igniting Digital Growth for Your Brand. We turn clicks into customers with data-driven strategies.</p>
+      <div class="socials">
+        <a href="#" aria-label="Chat"><i class="fas fa-comment"></i></a><a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a><a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a><a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a><a href="#" aria-label="X"><i class="fab fa-x-twitter"></i></a>
+      </div>
+    </div>
+    <div class="footer-col">
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Services</h4>
+      <ul>
+        <li><a href="services.html">SEO Optimization</a></li>
+        <li><a href="services.html">Social Media Marketing</a></li>
+        <li><a href="services.html">PPC Advertising</a></li>
+        <li><a href="services.html">Content Marketing</a></li>
+        <li><a href="services.html">Email Marketing</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Contact</h4>
+      <div class="contact-row"><span class="ico"><i class="fas fa-envelope"></i></span><span>hello@absparkdigitals.com</span></div>
+      <div class="contact-row"><span class="ico"><i class="fas fa-phone"></i></span><span>+1 (555) 123-4567</span></div>
+      <div class="contact-row"><span class="ico"><i class="fas fa-location-dot"></i></span><span>123 Digital Ave, Suite 200</span></div>
+    </div>
+  </div>
+  <p class="footer-bottom">© 2026 Abspark Digitals. All rights reserved.</p>
+</footer>
+
+<script>
+  function toggleMenu() {
+    document.getElementById('navLinks').classList.toggle('open');
+  }
+</script>
+</body>
+</html>
