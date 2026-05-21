@@ -1,11 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Services – Abspark Digitals</title>
-<link rel="stylesheet" href="style.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
   <style>
     .services-list {
       display: flex;
@@ -13,6 +16,7 @@
       gap: 22px;
       margin-top: 44px;
     }
+
     .service-row {
       background: var(--card-bg);
       border: 1px solid var(--card-border);
@@ -24,28 +28,36 @@
       gap: 24px;
       transition: transform var(--transition), border-color var(--transition), box-shadow var(--transition);
     }
+
     .service-row:hover {
       transform: translateY(-4px);
-      border-color: rgba(233,30,140,0.35);
-      box-shadow: 0 18px 44px rgba(0,0,0,0.25);
+      border-color: rgba(233, 30, 140, 0.35);
+      box-shadow: 0 18px 44px rgba(0, 0, 0, 0.25);
     }
-    .service-row .icon-box { margin-bottom: 0; }
+
+    .service-row .icon-box {
+      margin-bottom: 0;
+    }
+
     .service-row-body h2 {
       font-size: 1.25rem;
       font-weight: 800;
       margin-bottom: 8px;
     }
+
     .service-row-body p {
       font-size: 0.875rem;
       color: var(--color-white-70);
       line-height: 1.65;
       margin-bottom: 18px;
     }
+
     .features-grid {
       display: grid;
       grid-template-columns: 1fr 1fr;
       gap: 8px 24px;
     }
+
     .feature-item {
       display: flex;
       align-items: center;
@@ -53,19 +65,23 @@
       font-size: 0.82rem;
       color: var(--color-white-70);
     }
+
     .feature-item::before {
       content: '';
       display: inline-block;
-      width: 6px; height: 6px;
+      width: 6px;
+      height: 6px;
       border-radius: 50%;
       background: var(--color-hot-pink);
       flex-shrink: 0;
     }
+
     .service-row .icon-box-right {
-      width: 48px; height: 48px;
+      width: 48px;
+      height: 48px;
       border-radius: var(--radius-sm);
-      background: rgba(233,30,140,0.10);
-      border: 1px solid rgba(233,30,140,0.20);
+      background: rgba(233, 30, 140, 0.10);
+      border: 1px solid rgba(233, 30, 140, 0.20);
       display: flex;
       align-items: center;
       justify-content: center;
@@ -77,178 +93,189 @@
         grid-template-columns: auto 1fr;
         grid-template-rows: auto auto;
       }
-      .service-row .icon-box-right { display: none; }
-      .features-grid { grid-template-columns: 1fr; }
+
+      .service-row .icon-box-right {
+        display: none;
+      }
+
+      .features-grid {
+        grid-template-columns: 1fr;
+      }
     }
   </style>
 </head>
+
 <body>
 
-<nav>
-  <div class="nav-inner">
-    <a href="index.html" class="logo">Abs<span>park</span></a>
-    <ul class="nav-links" id="navLinks">
-      <li><a href="index.html">Home</a></li>
-      <li><a href="about.html">About</a></li>
-      <li><a href="services.html" class="active">Services</a></li>
-      <li><a href="portfolio.html">Portfolio</a></li>
-      <li><a href="contact.html">Contact</a></li>
-      <li><a href="contact.html" class="btn-nav">Get a Free Quote</a></li>
-    </ul>
-    <button class="hamburger" onclick="toggleMenu()" aria-label="Menu">
-      <span></span><span></span><span></span>
-    </button>
-  </div>
-</nav>
-
-<!-- HERO -->
-<section class="page-hero">
-  <h1>Our <span>Services</span></h1>
-  <p>End-to-end digital marketing solutions designed to fuel your growth.</p>
-</section>
-
-<!-- SERVICES LIST -->
-<section class="section section-mid">
-  <div class="container">
-    <div class="services-list">
-
-      <!-- SEO -->
-      <div class="service-row">
-        <div class="icon-box"><i class="fas fa-magnifying-glass"></i></div>
-        <div class="service-row-body">
-          <h2>SEO Optimization</h2>
-          <p>Dominate search results with our proven SEO strategies that drive organic traffic and qualified leads.</p>
-          <div class="features-grid">
-            <span class="feature-item">Keyword research &amp; strategy</span>
-            <span class="feature-item">On-page &amp; technical SEO</span>
-            <span class="feature-item">Link building</span>
-            <span class="feature-item">Local SEO optimization</span>
-          </div>
-        </div>
-        <div class="icon-box-right"><i class="fas fa-magnifying-glass"></i></div>
-      </div>
-
-      <!-- Social Media -->
-      <div class="service-row">
-        <div class="icon-box"><i class="fas fa-mobile-screen"></i></div>
-        <div class="service-row-body">
-          <h2>Social Media Marketing</h2>
-          <p>Build brand awareness, engage audiences, and generate leads through strategic social campaigns.</p>
-          <div class="features-grid">
-            <span class="feature-item">Platform strategy</span>
-            <span class="feature-item">Content creation &amp; scheduling</span>
-            <span class="feature-item">Community management</span>
-            <span class="feature-item">Influencer partnerships</span>
-          </div>
-        </div>
-        <div class="icon-box-right"><i class="fas fa-mobile-screen"></i></div>
-      </div>
-
-      <!-- PPC -->
-      <div class="service-row">
-        <div class="icon-box"><i class="fas fa-bullhorn"></i></div>
-        <div class="service-row-body">
-          <h2>PPC Advertising</h2>
-          <p>Get instant visibility and maximize your ad spend with precision-targeted paid campaigns.</p>
-          <div class="features-grid">
-            <span class="feature-item">Google &amp; Bing Ads</span>
-            <span class="feature-item">Social media ads</span>
-            <span class="feature-item">Retargeting campaigns</span>
-            <span class="feature-item">A/B testing &amp; optimization</span>
-          </div>
-        </div>
-        <div class="icon-box-right"><i class="fas fa-bullhorn"></i></div>
-      </div>
-
-      <!-- Content -->
-      <div class="service-row">
-        <div class="icon-box"><i class="fas fa-pen-to-square"></i></div>
-        <div class="service-row-body">
-          <h2>Content Marketing</h2>
-          <p>Attract and convert your ideal customers with compelling, value-driven content.</p>
-          <div class="features-grid">
-            <span class="feature-item">Blog &amp; article writing</span>
-            <span class="feature-item">Video &amp; multimedia content</span>
-            <span class="feature-item">Whitepapers &amp; e-books</span>
-            <span class="feature-item">Content strategy</span>
-          </div>
-        </div>
-        <div class="icon-box-right"><i class="fas fa-pen-to-square"></i></div>
-      </div>
-
-      <!-- Email -->
-      <div class="service-row">
-        <div class="icon-box"><i class="fas fa-envelope"></i></div>
-        <div class="service-row-body">
-          <h2>Email Marketing</h2>
-          <p>Nurture leads, retain customers, and drive repeat sales with automated email sequences.</p>
-          <div class="features-grid">
-            <span class="feature-item">Campaign strategy</span>
-            <span class="feature-item">Automation workflows</span>
-            <span class="feature-item">List segmentation</span>
-            <span class="feature-item">Performance analytics</span>
-          </div>
-        </div>
-        <div class="icon-box-right"><i class="fas fa-envelope"></i></div>
-      </div>
-
-    </div>
-  </div>
-</section>
-
-<!-- CTA -->
-<section class="cta-band">
-  <div class="cta-box">
-    <h2>Need a Custom Strategy?</h2>
-    <p>Every business is unique. Let's build a plan tailored to your goals.</p>
-    <a href="contact.html" class="btn btn-primary">Get a Free Consultation →</a>
-  </div>
-</section>
-
-<!-- FOOTER -->
-<footer>
-  <div class="footer-grid">
-    <div class="footer-brand">
-      <a href="index.html" class="logo">Abs<span>park</span> Digitals</a>
-      <p>Igniting Digital Growth for Your Brand. We turn clicks into customers with data-driven strategies.</p>
-      <div class="socials">
-        <a href="#" aria-label="Chat"><i class="fas fa-comment"></i></a><a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a><a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a><a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a><a href="#" aria-label="X"><i class="fab fa-x-twitter"></i></a>
-      </div>
-    </div>
-    <div class="footer-col">
-      <h4>Quick Links</h4>
-      <ul>
+  <nav>
+    <div class="nav-inner">
+      <a href="index.html" class="logo">Abs<span>park</span></a>
+      <ul class="nav-links" id="navLinks">
         <li><a href="index.html">Home</a></li>
         <li><a href="about.html">About</a></li>
-        <li><a href="services.html">Services</a></li>
+        <li><a href="services.html" class="active">Services</a></li>
         <li><a href="portfolio.html">Portfolio</a></li>
         <li><a href="contact.html">Contact</a></li>
+        <!-- <li><a href="contact.html" class="btn-nav">Get a Free Quote</a></li> -->
       </ul>
+      <button class="hamburger" onclick="toggleMenu()" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
     </div>
-    <div class="footer-col">
-      <h4>Services</h4>
-      <ul>
-        <li><a href="#">SEO Optimization</a></li>
-        <li><a href="#">Social Media Marketing</a></li>
-        <li><a href="#">PPC Advertising</a></li>
-        <li><a href="#">Content Marketing</a></li>
-        <li><a href="#">Email Marketing</a></li>
-      </ul>
-    </div>
-    <div class="footer-col">
-      <h4>Contact</h4>
-      <div class="contact-row"><span class="ico"><i class="fas fa-envelope"></i></span><span>hello@absparkdigitals.com</span></div>
-      <div class="contact-row"><span class="ico"><i class="fas fa-phone"></i></span><span>+1 (555) 123-4567</span></div>
-      <div class="contact-row"><span class="ico"><i class="fas fa-location-dot"></i></span><span>123 Digital Ave, Suite 200</span></div>
-    </div>
-  </div>
-  <p class="footer-bottom">© 2026 Abspark Digitals. All rights reserved.</p>
-</footer>
+  </nav>
 
-<script>
-  function toggleMenu() {
-    document.getElementById('navLinks').classList.toggle('open');
-  }
-</script>
+  <!-- HERO -->
+  <section class="page-hero">
+    <h1>Our <span>Services</span></h1>
+    <p>End-to-end digital marketing solutions designed to fuel your growth.</p>
+  </section>
+
+  <!-- SERVICES LIST -->
+  <section class="section section-mid">
+    <div class="container">
+      <div class="services-list">
+
+        <!-- SEO -->
+        <div class="service-row">
+          <div class="icon-box"><i class="fas fa-magnifying-glass"></i></div>
+          <div class="service-row-body">
+            <h2>SEO Optimization</h2>
+            <p>Dominate search results with our proven SEO strategies that drive organic traffic and qualified leads.
+            </p>
+            <div class="features-grid">
+              <span class="feature-item">Keyword research &amp; strategy</span>
+              <span class="feature-item">On-page &amp; technical SEO</span>
+              <span class="feature-item">Link building</span>
+              <span class="feature-item">Local SEO optimization</span>
+            </div>
+          </div>
+          <div class="icon-box-right"><i class="fas fa-magnifying-glass"></i></div>
+        </div>
+
+        <!-- Social Media -->
+        <div class="service-row">
+          <div class="icon-box"><i class="fas fa-mobile-screen"></i></div>
+          <div class="service-row-body">
+            <h2>Social Media Marketing</h2>
+            <p>Build brand awareness, engage audiences, and generate leads through strategic social campaigns.</p>
+            <div class="features-grid">
+              <span class="feature-item">Platform strategy</span>
+              <span class="feature-item">Content creation &amp; scheduling</span>
+              <span class="feature-item">Community management</span>
+              <span class="feature-item">Influencer partnerships</span>
+            </div>
+          </div>
+          <div class="icon-box-right"><i class="fas fa-mobile-screen"></i></div>
+        </div>
+
+        <!-- PPC -->
+        <div class="service-row">
+          <div class="icon-box"><i class="fas fa-bullhorn"></i></div>
+          <div class="service-row-body">
+            <h2>PPC Advertising</h2>
+            <p>Get instant visibility and maximize your ad spend with precision-targeted paid campaigns.</p>
+            <div class="features-grid">
+              <span class="feature-item">Google &amp; Bing Ads</span>
+              <span class="feature-item">Social media ads</span>
+              <span class="feature-item">Retargeting campaigns</span>
+              <span class="feature-item">A/B testing &amp; optimization</span>
+            </div>
+          </div>
+          <div class="icon-box-right"><i class="fas fa-bullhorn"></i></div>
+        </div>
+
+        <!-- Content -->
+        <div class="service-row">
+          <div class="icon-box"><i class="fas fa-pen-to-square"></i></div>
+          <div class="service-row-body">
+            <h2>Content Marketing</h2>
+            <p>Attract and convert your ideal customers with compelling, value-driven content.</p>
+            <div class="features-grid">
+              <span class="feature-item">Blog &amp; article writing</span>
+              <span class="feature-item">Video &amp; multimedia content</span>
+              <span class="feature-item">Whitepapers &amp; e-books</span>
+              <span class="feature-item">Content strategy</span>
+            </div>
+          </div>
+          <div class="icon-box-right"><i class="fas fa-pen-to-square"></i></div>
+        </div>
+
+        <!-- Email -->
+        <div class="service-row">
+          <div class="icon-box"><i class="fas fa-envelope"></i></div>
+          <div class="service-row-body">
+            <h2>Email Marketing</h2>
+            <p>Nurture leads, retain customers, and drive repeat sales with automated email sequences.</p>
+            <div class="features-grid">
+              <span class="feature-item">Campaign strategy</span>
+              <span class="feature-item">Automation workflows</span>
+              <span class="feature-item">List segmentation</span>
+              <span class="feature-item">Performance analytics</span>
+            </div>
+          </div>
+          <div class="icon-box-right"><i class="fas fa-envelope"></i></div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta-band">
+    <div class="cta-box">
+      <h2>Need a Custom Strategy?</h2>
+      <p>Every business is unique. Let's build a plan tailored to your goals.</p>
+      <a href="contact.html" class="btn btn-primary">Get a Free Consultation →</a>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="logo">Abs<span>park</span> Digitals</a>
+        <p>Igniting Digital Growth for Your Brand. We turn clicks into customers with data-driven strategies.</p>
+        <!-- <div class="socials">
+        <a href="#" aria-label="Chat"><i class="fas fa-comment"></i></a><a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a><a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a><a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a><a href="#" aria-label="X"><i class="fab fa-x-twitter"></i></a>
+      </div> -->
+      </div>
+      <div class="footer-col">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="portfolio.html">Portfolio</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Services</h4>
+        <ul>
+          <li><a href="#">SEO Optimization</a></li>
+          <li><a href="#">Social Media Marketing</a></li>
+          <li><a href="#">PPC Advertising</a></li>
+          <li><a href="#">Content Marketing</a></li>
+          <li><a href="#">Email Marketing</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <div class="contact-row"><span class="ico"><i
+              class="fas fa-envelope"></i></span><span>absparkdigital.shopifypartner.ca@gmail.com</span></div>
+        <!-- <div class="contact-row"><span class="ico"><i class="fas fa-phone"></i></span><span>+1 (555) 123-4567</span></div> -->
+        <div class="contact-row"><span class="ico"><i class="fas fa-location-dot"></i></span><span>45 Marina Road</span>
+        </div>
+      </div>
+    </div>
+    <p class="footer-bottom">© 2026 Abspark Digitals. All rights reserved.</p>
+  </footer>
+
+  <script>
+    function toggleMenu() {
+      document.getElementById('navLinks').classList.toggle('open');
+    }
+  </script>
 </body>
+
 </html>

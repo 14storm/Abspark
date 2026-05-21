@@ -1,11 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Portfolio – Abspark Digitals</title>
-<link rel="stylesheet" href="style.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
   <style>
     .portfolio-grid {
       display: grid;
@@ -13,6 +16,7 @@
       gap: 24px;
       margin-top: 44px;
     }
+
     .portfolio-card {
       background: var(--card-bg);
       border: 1px solid var(--card-border);
@@ -20,11 +24,13 @@
       padding: 30px 28px 26px;
       transition: transform var(--transition), box-shadow var(--transition), border-color var(--transition);
     }
+
     .portfolio-card:hover {
       transform: translateY(-5px);
-      box-shadow: 0 22px 54px rgba(0,0,0,0.28);
-      border-color: rgba(233,30,140,0.32);
+      box-shadow: 0 22px 54px rgba(0, 0, 0, 0.28);
+      border-color: rgba(233, 30, 140, 0.32);
     }
+
     .portfolio-card .card-tag {
       font-size: 0.68rem;
       font-weight: 700;
@@ -33,24 +39,36 @@
       color: var(--color-hot-pink);
       margin-bottom: 10px;
     }
+
     .portfolio-card h2 {
       font-size: 1.2rem;
       font-weight: 800;
       margin-bottom: 10px;
     }
-    .portfolio-card > p {
+
+    .portfolio-card>p {
       font-size: 0.86rem;
       color: var(--color-white-70);
       line-height: 1.65;
       margin-bottom: 22px;
     }
+
     .stats {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
       gap: 10px;
     }
-    .stat { text-align: center; }
-    .stat-ico { font-size: 0.75rem; color: var(--color-hot-pink); margin-bottom: 5px; }
+
+    .stat {
+      text-align: center;
+    }
+
+    .stat-ico {
+      font-size: 0.75rem;
+      color: var(--color-hot-pink);
+      margin-bottom: 5px;
+    }
+
     .stat-val {
       display: block;
       font-size: 1.25rem;
@@ -58,6 +76,7 @@
       color: var(--color-white);
       line-height: 1.1;
     }
+
     .stat-lbl {
       display: block;
       font-size: 0.7rem;
@@ -66,193 +85,199 @@
     }
 
     @media (max-width: 700px) {
-      .portfolio-grid { grid-template-columns: 1fr; }
+      .portfolio-grid {
+        grid-template-columns: 1fr;
+      }
     }
   </style>
 </head>
+
 <body>
 
-<nav>
-  <div class="nav-inner">
-    <a href="index.html" class="logo">Abs<span>park</span></a>
-    <ul class="nav-links" id="navLinks">
-      <li><a href="index.html">Home</a></li>
-      <li><a href="about.html">About</a></li>
-      <li><a href="services.html">Services</a></li>
-      <li><a href="portfolio.html" class="active">Portfolio</a></li>
-      <li><a href="contact.html">Contact</a></li>
-      <li><a href="contact.html" class="btn-nav">Get a Free Quote</a></li>
-    </ul>
-    <button class="hamburger" onclick="toggleMenu()" aria-label="Menu">
-      <span></span><span></span><span></span>
-    </button>
-  </div>
-</nav>
-
-<!-- HERO -->
-<section class="page-hero">
-  <h1>Our <span>Portfolio</span></h1>
-  <p>Real results for real businesses. Here's what happens when strategy meets execution.</p>
-</section>
-
-<!-- PORTFOLIO GRID -->
-<section class="section section-mid">
-  <div class="container">
-    <div class="portfolio-grid">
-
-      <div class="portfolio-card">
-        <div class="card-tag">SEO + Content</div>
-        <h2>TechStart SaaS</h2>
-        <p>Overhauled their content strategy and technical SEO, resulting in a massive organic traffic boost.</p>
-        <div class="divider"></div>
-        <div class="stats">
-          <div class="stat">
-            <i class="fas fa-chart-line"></i>
-            <span class="stat-val">+340%</span>
-            <span class="stat-lbl">Traffic Increase</span>
-          </div>
-          <div class="stat">
-            <i class="fas fa-bullseye"></i>
-            <span class="stat-val">1,200+</span>
-            <span class="stat-lbl">Leads Generated</span>
-          </div>
-          <div class="stat">
-            <i class="fas fa-dollar-sign"></i>
-            <span class="stat-val">$480K</span>
-            <span class="stat-lbl">Revenue Impact</span>
-          </div>
-        </div>
-      </div>
-
-      <div class="portfolio-card">
-        <div class="card-tag">PPC + Social</div>
-        <h2>GreenLeaf E-commerce</h2>
-        <p>Built a multi-channel paid strategy that dramatically lowered acquisition costs.</p>
-        <div class="divider"></div>
-        <div class="stats">
-          <div class="stat">
-            <i class="fas fa-chart-line"></i>
-            <span class="stat-val">8.5x</span>
-            <span class="stat-lbl">ROAS</span>
-          </div>
-          <div class="stat">
-            <i class="fas fa-bullseye"></i>
-            <span class="stat-val">3,400+</span>
-            <span class="stat-lbl">New Customers</span>
-          </div>
-          <div class="stat">
-            <i class="fas fa-dollar-sign"></i>
-            <span class="stat-val">$120K</span>
-            <span class="stat-lbl">Ad Spend Saved</span>
-          </div>
-        </div>
-      </div>
-
-      <div class="portfolio-card">
-        <div class="card-tag">Social Media</div>
-        <h2>StyleHub Fashion</h2>
-        <p>Grew their Instagram from 5K to 120K followers with engaging content and influencer partnerships.</p>
-        <div class="divider"></div>
-        <div class="stats">
-          <div class="stat">
-            <i class="fas fa-chart-line"></i>
-            <span class="stat-val">2,300%</span>
-            <span class="stat-lbl">Follower Growth</span>
-          </div>
-          <div class="stat">
-            <i class="fas fa-bullseye"></i>
-            <span class="stat-val">6.8%</span>
-            <span class="stat-lbl">Engagement Rate</span>
-          </div>
-          <div class="stat">
-            <div class="stat-ico">$</div>
-            <span class="stat-val">$210K</span>
-            <span class="stat-lbl">Sales via Social</span>
-          </div>
-        </div>
-      </div>
-
-      <div class="portfolio-card">
-        <div class="card-tag">Local SEO + PPC</div>
-        <h2>HealthFirst Clinic</h2>
-        <p>Dominated local search results and drove appointment bookings through targeted campaigns.</p>
-        <div class="divider"></div>
-        <div class="stats">
-          <div class="stat">
-            <div class="stat-ico">↗</div>
-            <span class="stat-val">#1</span>
-            <span class="stat-lbl">Local Ranking</span>
-          </div>
-          <div class="stat">
-            <div class="stat-ico">🎯</div>
-            <span class="stat-val">450+</span>
-            <span class="stat-lbl">Monthly Bookings</span>
-          </div>
-          <div class="stat">
-            <i class="fas fa-dollar-sign"></i>
-            <span class="stat-val">-62%</span>
-            <span class="stat-lbl">Cost per Lead</span>
-          </div>
-        </div>
-      </div>
-
-    </div>
-  </div>
-</section>
-
-<!-- CTA -->
-<section class="cta-band">
-  <div class="cta-box">
-    <h2>Want Results Like These?</h2>
-    <p>Let's create a success story for your brand.</p>
-    <a href="contact.html" class="btn btn-primary">Start Your Project →</a>
-  </div>
-</section>
-
-<!-- FOOTER -->
-<footer>
-  <div class="footer-grid">
-    <div class="footer-brand">
-      <a href="index.html" class="logo">Abs<span>park</span> Digitals</a>
-      <p>Igniting Digital Growth for Your Brand. We turn clicks into customers with data-driven strategies.</p>
-      <div class="socials">
-        <a href="#" aria-label="Chat"><i class="fas fa-comment"></i></a><a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a><a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a><a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a><a href="#" aria-label="X"><i class="fab fa-x-twitter"></i></a>
-      </div>
-    </div>
-    <div class="footer-col">
-      <h4>Quick Links</h4>
-      <ul>
+  <nav>
+    <div class="nav-inner">
+      <a href="index.html" class="logo">Abs<span>park</span></a>
+      <ul class="nav-links" id="navLinks">
         <li><a href="index.html">Home</a></li>
         <li><a href="about.html">About</a></li>
         <li><a href="services.html">Services</a></li>
-        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="portfolio.html" class="active">Portfolio</a></li>
         <li><a href="contact.html">Contact</a></li>
+        <!-- <li><a href="contact.html" class="btn-nav">Get a Free Quote</a></li> -->
       </ul>
+      <button class="hamburger" onclick="toggleMenu()" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
     </div>
-    <div class="footer-col">
-      <h4>Services</h4>
-      <ul>
-        <li><a href="services.html">SEO Optimization</a></li>
-        <li><a href="services.html">Social Media Marketing</a></li>
-        <li><a href="services.html">PPC Advertising</a></li>
-        <li><a href="services.html">Content Marketing</a></li>
-        <li><a href="services.html">Email Marketing</a></li>
-      </ul>
-    </div>
-    <div class="footer-col">
-      <h4>Contact</h4>
-      <div class="contact-row"><span class="ico"><i class="fas fa-envelope"></i></span><span>hello@absparkdigitals.com</span></div>
-      <div class="contact-row"><span class="ico"><i class="fas fa-phone"></i></span><span>+1 (555) 123-4567</span></div>
-      <div class="contact-row"><span class="ico"><i class="fas fa-location-dot"></i></span><span>123 Digital Ave, Suite 200</span></div>
-    </div>
-  </div>
-  <p class="footer-bottom">© 2026 Abspark Digitals. All rights reserved.</p>
-</footer>
+  </nav>
 
-<script>
-  function toggleMenu() {
-    document.getElementById('navLinks').classList.toggle('open');
-  }
-</script>
+  <!-- HERO -->
+  <section class="page-hero">
+    <h1>Our <span>Portfolio</span></h1>
+    <p>Real results for real businesses. Here's what happens when strategy meets execution.</p>
+  </section>
+
+  <!-- PORTFOLIO GRID -->
+  <section class="section section-mid">
+    <div class="container">
+      <div class="portfolio-grid">
+
+        <div class="portfolio-card">
+          <div class="card-tag">SEO + Content</div>
+          <h2>TechStart SaaS</h2>
+          <p>Overhauled their content strategy and technical SEO, resulting in a massive organic traffic boost.</p>
+          <div class="divider"></div>
+          <div class="stats">
+            <div class="stat">
+              <i class="fas fa-chart-line"></i>
+              <span class="stat-val">+340%</span>
+              <span class="stat-lbl">Traffic Increase</span>
+            </div>
+            <div class="stat">
+              <i class="fas fa-bullseye"></i>
+              <span class="stat-val">1,200+</span>
+              <span class="stat-lbl">Leads Generated</span>
+            </div>
+            <div class="stat">
+              <i class="fas fa-dollar-sign"></i>
+              <span class="stat-val">$480K</span>
+              <span class="stat-lbl">Revenue Impact</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="portfolio-card">
+          <div class="card-tag">PPC + Social</div>
+          <h2>GreenLeaf E-commerce</h2>
+          <p>Built a multi-channel paid strategy that dramatically lowered acquisition costs.</p>
+          <div class="divider"></div>
+          <div class="stats">
+            <div class="stat">
+              <i class="fas fa-chart-line"></i>
+              <span class="stat-val">8.5x</span>
+              <span class="stat-lbl">ROAS</span>
+            </div>
+            <div class="stat">
+              <i class="fas fa-bullseye"></i>
+              <span class="stat-val">3,400+</span>
+              <span class="stat-lbl">New Customers</span>
+            </div>
+            <div class="stat">
+              <i class="fas fa-dollar-sign"></i>
+              <span class="stat-val">$120K</span>
+              <span class="stat-lbl">Ad Spend Saved</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="portfolio-card">
+          <div class="card-tag">Social Media</div>
+          <h2>StyleHub Fashion</h2>
+          <p>Grew their Instagram from 5K to 120K followers with engaging content and influencer partnerships.</p>
+          <div class="divider"></div>
+          <div class="stats">
+            <div class="stat">
+              <i class="fas fa-chart-line"></i>
+              <span class="stat-val">2,300%</span>
+              <span class="stat-lbl">Follower Growth</span>
+            </div>
+            <div class="stat">
+              <i class="fas fa-bullseye"></i>
+              <span class="stat-val">6.8%</span>
+              <span class="stat-lbl">Engagement Rate</span>
+            </div>
+            <div class="stat">
+              <div class="stat-ico">$</div>
+              <span class="stat-val">$210K</span>
+              <span class="stat-lbl">Sales via Social</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="portfolio-card">
+          <div class="card-tag">Local SEO + PPC</div>
+          <h2>HealthFirst Clinic</h2>
+          <p>Dominated local search results and drove appointment bookings through targeted campaigns.</p>
+          <div class="divider"></div>
+          <div class="stats">
+            <div class="stat">
+              <div class="stat-ico">↗</div>
+              <span class="stat-val">#1</span>
+              <span class="stat-lbl">Local Ranking</span>
+            </div>
+            <div class="stat">
+              <div class="stat-ico">🎯</div>
+              <span class="stat-val">450+</span>
+              <span class="stat-lbl">Monthly Bookings</span>
+            </div>
+            <div class="stat">
+              <i class="fas fa-dollar-sign"></i>
+              <span class="stat-val">-62%</span>
+              <span class="stat-lbl">Cost per Lead</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta-band">
+    <div class="cta-box">
+      <h2>Want Results Like These?</h2>
+      <p>Let's create a success story for your brand.</p>
+      <a href="contact.html" class="btn btn-primary">Start Your Project →</a>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="logo">Abs<span>park</span> Digitals</a>
+        <p>Igniting Digital Growth for Your Brand. We turn clicks into customers with data-driven strategies.</p>
+        <!-- <div class="socials">
+        <a href="#" aria-label="Chat"><i class="fas fa-comment"></i></a><a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a><a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a><a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a><a href="#" aria-label="X"><i class="fab fa-x-twitter"></i></a>
+      </div> -->
+      </div>
+      <div class="footer-col">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="portfolio.html">Portfolio</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Services</h4>
+        <ul>
+          <li><a href="services.html">SEO Optimization</a></li>
+          <li><a href="services.html">Social Media Marketing</a></li>
+          <li><a href="services.html">PPC Advertising</a></li>
+          <li><a href="services.html">Content Marketing</a></li>
+          <li><a href="services.html">Email Marketing</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <div class="contact-row"><span class="ico"><i
+              class="fas fa-envelope"></i></span><span>absparkdigital.shopifypartner.ca@gmail.com</span></div>
+        <!-- <div class="contact-row"><span class="ico"><i class="fas fa-phone"></i></span><span>+1 (555) 123-4567</span></div> -->
+        <div class="contact-row"><span class="ico"><i class="fas fa-location-dot"></i></span><span>45 Marina Road</span>
+        </div>
+      </div>
+    </div>
+    <p class="footer-bottom">© 2026 Abspark Digitals. All rights reserved.</p>
+  </footer>
+
+  <script>
+    function toggleMenu() {
+      document.getElementById('navLinks').classList.toggle('open');
+    }
+  </script>
 </body>
+
 </html>
